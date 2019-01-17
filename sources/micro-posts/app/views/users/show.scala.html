@@ -16,7 +16,7 @@
     </aside>
     <div class="col-xs-8">
         @views.html.users.tab(user, microPosts.totalCount, followingsCount, followersCount)
-        @if(microPosts.items.nonEmpty){
+            @if(microPosts.items.nonEmpty){
         @common.posts(currentUser, microPosts)
         }
     </div>

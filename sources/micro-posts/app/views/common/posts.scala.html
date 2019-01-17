@@ -22,9 +22,9 @@
             @if(currentUser.id.get == micropost.userId) {
             <div>
                 @b3.formCSRF(routes.PostController.delete(micropost.id.get)) {
-                @b3.submit('class -> "btn btn-danger btn-xs") {
-                @Messages("Delete")
-                }
+                    @b3.submit('class -> "btn btn-danger btn-xs") {
+                        @Messages("Delete")
+                    }
                 }
             </div>
             }
